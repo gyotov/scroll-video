@@ -35,8 +35,8 @@
 
 <body>
   <div id="video-wrapper">
-    <video src="./assets/placeholder.mp4" playsinline="true" webkit-playsinline="true" preload="auto" muted="muted"
-      class="video-background">
+    <video src="./assets/processed_upload_105649685.mp4" playsinline="true" webkit-playsinline="true" preload="auto"
+      muted="muted" class="video-background">
     </video>
 
     <div id="container"></div>
@@ -50,7 +50,7 @@
   const video = document.querySelector(".video-background");
   const container = document.querySelector('#container')
   const src = video.currentSrc || video.src;
-  const speed = 250;
+  const speed = 400;
 
   function once(el, event, fn, opts) {
     const onceFn = function (e) {
@@ -67,21 +67,22 @@
     video.pause();
   });
 
-  gsap.registerPlugin(ScrollTrigger);
-
-  const tl = gsap.timeline({
-    defaults: { duration: 1 },
-    scrollTrigger: {
-      trigger: "#container",
-      start: "top top",
-      end: "bottom bottom",
-      scrub: true,
-    }
-  });
-
   once(video, "loadedmetadata", () => {
     /* Set container height based on video length and desired speed */
     container.style.height = (video.duration * speed) + 'px'
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    const tl = gsap.timeline({
+      defaults: { duration: 1 },
+      scrollTrigger: {
+        trigger: "#container",
+        start: "top top",
+        end: "bottom bottom",
+        scrub: true,
+        // markers: true
+      }
+    });
 
     tl.fromTo(
       video,
