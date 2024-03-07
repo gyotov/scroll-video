@@ -13,6 +13,12 @@
     margin: 0;
   }
 
+  body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue",
+      Helvetica, Arial, sans-serif;
+  }
+
   .video-background {
     display: block;
     position: sticky;
@@ -31,19 +37,210 @@
     height: 100vh;
     margin-top: -100vh;
   }
+
+  #overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #content {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto 15rem;
+    font-size: 2rem;
+    text-align: center;
+    max-width: 40rem;
+    max-height: 40rem;
+    padding: 3.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3rem;
+  }
 </style>
 
 <body>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+
   <div id="video-wrapper">
-    <video src="./assets/processed_upload_105649685.mp4" playsinline="true" webkit-playsinline="true" preload="auto"
-      muted="muted" class="video-background">
+    <video src="./assets/vecteezy_abstract-neon-lights-glow-hole-tunnel-3d-illustration-vj-loop_1908965.mp4"
+      playsinline="true" webkit-playsinline="true" preload="auto" muted="muted" class="video-background">
     </video>
 
     <div id="container"></div>
+
+    <div id="overlay-content">
+      <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione reiciendis consequatur
+          similique unde, fugit, suscipit dolor animi facere, necessitatibus itaque possimus autem. Ea a hic
+          perspiciatis
+          obcaecati voluptatem!</p>
+      </div>
+
+      <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione reiciendis consequatur
+          similique unde, fugit, suscipit dolor animi facere, necessitatibus itaque possimus autem. Ea a hic
+          perspiciatis
+          obcaecati voluptatem!</p>
+      </div>
+
+      <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione reiciendis consequatur
+          similique unde, fugit, suscipit dolor animi facere, necessitatibus itaque possimus autem. Ea a hic
+          perspiciatis
+          obcaecati voluptatem!</p>
+      </div>
+
+      <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione reiciendis consequatur
+          similique unde, fugit, suscipit dolor animi facere, necessitatibus itaque possimus autem. Ea a hic
+          perspiciatis
+          obcaecati voluptatem!</p>
+      </div>
+
+      <div id="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione reiciendis consequatur
+          similique unde, fugit, suscipit dolor animi facere, necessitatibus itaque possimus autem. Ea a hic
+          perspiciatis
+          obcaecati voluptatem!</p>
+      </div>
+    </div>
   </div>
 
-  <script src="./assets/gsap.min.js"></script>
-  <script src="./assets/ScrollTrigger.min.js"></script>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat, aut ducimus quod minus at dicta! Voluptas nostrum
+    perferendis qui! In ullam ex, voluptatem fugit voluptas odio voluptatibus error rerum harum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam cumque quis quos molestiae dolores natus ut
+    dignissimos explicabo iusto ducimus architecto non corrupti vitae pariatur, obcaecati, aliquid officia saepe. Illo.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, optio molestiae praesentium vitae asperiores
+    dignissimos
+    sint rerum ullam culpa aut fuga, quo earum aperiam a porro minima quisquam molestias maiores.
+  </p>
 </body>
 
 <script>
@@ -61,34 +258,24 @@
     return onceFn;
   }
 
-  /* Make sure the video is 'activated' on iOS */
   once(document.documentElement, "touchstart", function (e) {
     video.play();
     video.pause();
   });
 
   once(video, "loadedmetadata", () => {
-    /* Set container height based on video length and desired speed */
     container.style.height = (video.duration * speed) + 'px'
 
-    gsap.registerPlugin(ScrollTrigger);
+    const scrollVideo = () => {
+      const distanceFromTop = window.scrollY + container.getBoundingClientRect().top;
+      const rawPercentScrolled = (window.scrollY - distanceFromTop) / (container.scrollHeight - window.innerHeight);
+      const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
 
-    const tl = gsap.timeline({
-      defaults: { duration: 1 },
-      scrollTrigger: {
-        trigger: "#container",
-        start: "top top",
-        end: "bottom bottom",
-        scrub: true,
-        // markers: true
-      }
-    });
+      video.currentTime = video.duration * percentScrolled;
+      requestAnimationFrame(scrollVideo);
+    }
 
-    tl.fromTo(
-      video,
-      { currentTime: 0 },
-      { currentTime: video.duration || 1 }
-    );
+    requestAnimationFrame(scrollVideo);
   });
 </script>
 
