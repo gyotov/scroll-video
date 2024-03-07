@@ -256,8 +256,8 @@
 <script>
   const video = document.querySelector(".video-background");
   const container = document.querySelector('#container')
-  const src = video.currentSrc || video.src;
   const speed = 400;
+  let loaded = false
 
   function once(el, event, fn, opts) {
     const onceFn = function (e) {
@@ -268,25 +268,30 @@
     return onceFn;
   }
 
+  function scrollVideo() {
+    if (!loaded) return
+
+    const distanceFromTop = window.scrollY + container.getBoundingClientRect().top;
+    const rawPercentScrolled = (window.scrollY - distanceFromTop) / (container.scrollHeight - window.innerHeight);
+    const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
+
+    video.currentTime = video.duration * percentScrolled;
+    requestAnimationFrame(scrollVideo);
+  }
+
   once(document.documentElement, "touchstart", function (e) {
+    if (!loaded) return
+
     video.play();
     video.pause();
   });
 
   once(video, "loadedmetadata", () => {
+    loaded = true
     container.style.height = (video.duration * speed) + 'px'
-
-    const scrollVideo = () => {
-      const distanceFromTop = window.scrollY + container.getBoundingClientRect().top;
-      const rawPercentScrolled = (window.scrollY - distanceFromTop) / (container.scrollHeight - window.innerHeight);
-      const percentScrolled = Math.min(Math.max(rawPercentScrolled, 0), 1);
-
-      video.currentTime = video.duration * percentScrolled;
-      requestAnimationFrame(scrollVideo);
-    }
-
-    requestAnimationFrame(scrollVideo);
   });
+
+  once(window, 'scroll', scrollVideo)
 </script>
 
 </html>
