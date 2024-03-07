@@ -10,7 +10,7 @@ try {
       video.addCommand("-vf", "scale=1920:-1");
       video.addCommand("-movflags", "faststart");
       video.addCommand("-vcodec", "libx264");
-      video.addCommand("-crf", "15");
+      video.addCommand("-crf", "20");
       video.addCommand("-g", "1");
       video.addCommand("-an");
       video.addCommand("-pix_fmt", "yuv420p");
