@@ -11,7 +11,7 @@ try {
       video.addCommand("-r", "25");
       video.addCommand("-movflags", "faststart");
       video.addCommand("-vcodec", "libx264");
-      video.addCommand("-crf", "17");
+      video.addCommand("-crf", "23");
       video.addCommand("-g", "1");
       video.addCommand("-an");
       video.addCommand("-pix_fmt", "yuv420p");
