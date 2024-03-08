@@ -45,6 +45,7 @@
     top: 50%;
     left: 0;
     transform: translateY(-50%);
+    pointer-events: none;
   }
 
   #content {
@@ -137,12 +138,12 @@
 
   <div id="video-wrapper">
     <video src="./assets/vecteezy_abstract-neon-lights-glow-hole-tunnel-3d-illustration-vj-loop_1908965.mp4"
-      playsinline="true" webkit-playsinline="true" preload="auto" muted="muted" class="video-background">
+      playsinline="true" webkit-playsinline="true" preload="auto" muted="muted" class="video-background" controls>
     </video>
 
     <div id="container"></div>
 
-    <div id="overlay-content">
+    <!-- <div id="overlay-content">
       <div id="content">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quasi ratione reiciendis consequatur
           similique unde, fugit, suscipit dolor animi facere, necessitatibus itaque possimus autem. Ea a hic
@@ -177,7 +178,7 @@
           perspiciatis
           obcaecati voluptatem!</p>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <p>
@@ -291,7 +292,7 @@
     container.style.height = (video.duration * speed) + 'px'
   });
 
-  once(window, 'scroll', scrollVideo)
+  // once(window, 'scroll', scrollVideo)
 </script>
 
 </html>
